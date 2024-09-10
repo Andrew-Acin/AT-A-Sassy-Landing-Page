@@ -1,3 +1,6 @@
+  @import "utilities";
+  @import "config";
+  @import "btnConfig";
 
 * {
   box-sizing: border-box;
@@ -13,13 +16,49 @@ body {
 
 img {
   border-radius: 50%;
+  width: 550px;
 }
 
 a {
   text-decoration: none;
 }
 
+nav {
+  color: $text-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 15px;
+
+}
+
+li {
+  color: $text-color;
+}
+
+li a {
+  color: $text-color;
+}
+
+li a:visited {
+  color: $text-color;
+}
+
+.nav-points {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+ul {
+  list-style-type: none;
+  color: inherit;
+}
+
 .hero {
+  background-color: $primary-color;
+  color: $text-color;
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?
@@ -28,6 +67,25 @@ a {
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.hero-titles {
+  font-size: 45px;
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
